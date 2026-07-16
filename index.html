@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta title="Arquivo da Música">
+  <meta name="description" content="Bem-vindo ao Arquivo da Música - o seu portal para eventos musicais, notícias e muito mais. Descubra concertos, festivais e atividades culturais.">
+  <meta name="keywords" content="música, eventos, concertos, festivais cultura, bandas, orquestras, musicos">
+  <meta name="author" content="Nicolas de Matos Mariano, Diego Teran">
+  <title>Arquivo da Música</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/layout.js" defer></script>
+</head>
+<body>
+<!-- FALTAS CSS -->
+ 
+  <!-- HEADER -->
+  <header data-include></header>
+
+  <!-- HERO / CARROSSEL -->
+  <section class="hero">
+    <div class="hero-slide" style="background-image:url(img/img_entrada.jpg)">
+      <div class="hero-text">
+        <h2>Concerto Sinfónico</h2>
+        <p>Uma noite inesquecível com a Orquestra Nacional</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRÓXIMOS EVENTOS -->
+  <section class="section" id="proximos-eventos">
+    <h2>Próximos Eventos</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <img src="img/jazz_evento.jpg" alt="cena de jazz">
+        <div class="card-content">
+          <h3>Jazz ao Pôr do Sol</h3>
+          <p>10 Nov 2025 | 19h00</p>
+          <button onclick="window.location.href='eventos/jazz.html'">Comprar Bilhetes</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/opera_evento.jpg" alt="cena de Ópera">
+        <div class="card-content">
+          <h3>Noite de Ópera</h3>
+          <p>15 Nov 2025 | 21h00</p>
+          <button onclick="window.location.href='eventos/opera.html'">Comprar Bilhetes</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/natal_evento.jpg" alt="piano com decoração de natal">
+        <div class="card-content">
+          <h3>Concerto de Natal</h3>
+          <p>22 Dez 2025 | 20h00</p>
+          <button onclick="window.location.href='eventos/natal.html'">Comprar Bilhetes</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EM DESTAQUE -->
+  <section class="section destaque">
+    <h2>Em Destaque</h2>
+    <div class="destaque-grid">
+
+      <a href="emDestaque/festival.html" class="destaque-item" 
+        style="background-image:url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80')">
+        <div class="overlay">
+          <h3>Festival da Música Contemporânea</h3>
+        </div>
+      </a>
+
+      <a href="emDestaque/residencia.html" class="destaque-item" 
+        style="background-image:url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1200&q=80')">
+        <div class="overlay">
+          <h3>Residência Artística 2025</h3>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- PLANEAR EVENTOS -->
+  <section class="section planear">
+    <h2>Planear Eventos</h2>
+    <div class="planear-grid">
+      <div class="planear-card">
+        <h3>Organize o seu Concerto</h3>
+        <p>Reserve salas, palcos e equipamentos com o apoio da nossa equipa técnica.</p>
+        <button onclick="window.location.href='planearEventos/organizeConcerto.html'">Saber Mais</button>
+      </div>
+      <div class="planear-card">
+        <h3>Eventos Corporativos</h3>
+        <p>Espaços modernos e acústica perfeita para apresentações e conferências.</p>
+        <button onclick="window.location.href='planearEventos/eventosCorporativos.html'">Saber Mais</button>
+      </div>
+      <div class="planear-card">
+        <h3>Produção Musical</h3>
+        <p>Serviços de som, gravação e iluminação profissional.</p>
+        <button onclick="window.location.href='planearEventos/producaoMusical.html'">Saber Mais</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTAS E NOTÍCIAS -->
+  <section class="section noticias">
+    <h2>Notas e Notícias</h2>
+    <div class="noticias-grid">
+
+      <article class="noticia">
+        <a href="noticias/mariahCarey.html">
+        <img src="img/mariahCarey2.avif" alt="Mariah Carey" id="mariahCarey">
+        <div class="noticia-content">
+          <h4>Mariah Carey nos Jogos Olímpicos</h4>
+          <p>Mariah Carey será a estrela da cerimónia de abertura dos Jogos Olímpicos de Inverno de 2026.</p>
+        </div>
+        </a>
+      </article>
+
+      <article class="noticia">
+        <a href="noticias/CarlosDoCarmo.html">
+        <img src="img/carlosCarmo.jpg" alt="carlos do Carmo">
+        <div class="noticia-content">
+          <h4>Quem foi Carlos do Carmo</h4>
+          <p>Conheça um pouco sobre o legado musical de Carlos do Carmo.</p>
+        </div>
+        </a>
+      </article>
+
+      <article class="noticia">
+        <a href="noticias/plutonio.html">
+        <img src="img/plutonio.png" alt="Plutónio">
+        <div class="noticia-content">
+          <h4>Plutónio abre as portas do estúdio</h4>
+          <p>Plutónio abre as portas do estúdio onde produziu verdadeiros os sucessos.</p>
+        </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer data-include></footer>
+
+</body>
+</html>

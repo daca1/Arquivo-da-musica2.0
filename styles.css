@@ -1,0 +1,407 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #111;
+  color: #f5f5f5;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  color: #f9d342;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #f9d342;
+}
+
+/* HERO */
+.hero {
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  background-size: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-text {
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  color: #fff;
+  width: 100%;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #f9d342;
+}
+
+/* SEÇÕES */
+.section {
+  padding: 3rem 5%;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #f9d342;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section h3 {
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* EVENTOS */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  color: #bbb;
+}
+
+button {
+  background-color: #f9d342;
+  border: none;
+  color: #111;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+/* DESTAQUE */
+.destaque-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.destaque-item {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 1.5rem;
+}
+
+.overlay h3 {
+  color: #fff;
+}
+
+/* PLANEAR EVENTOS */
+.planear-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.planear-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.planear-card h3 {
+  color: #f9d342;
+  margin-bottom: 0.5rem;
+}
+
+/* NOTAS E NOTÍCIAS */
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.noticia {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.noticia img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.noticia-content {
+  padding: 1rem;
+}
+
+.noticia-content h4 {
+  color: #fff;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background-color: #000;
+  padding: 3rem 5%;
+  border-top: 1px solid #333;
+
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.footer-section h4 {
+  color: #f9d342;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  display: block;
+  color: #bbb;
+  margin-bottom: 0.25rem;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-social .social-icons img{
+  width: 32px;
+  margin-right: 0.5rem;
+  transition: opacity 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  opacity: 0.7;
+}
+
+.footer-copy {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-info h3 {
+  color: #f9d342;
+  margin-top: 1rem;
+}
+
+.bilheteria-info{
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.bilheteria-info li{
+  list-style: none;
+}
+
+.bilheteria-info h3 {
+  margin-top: 1.5rem;
+  color: #f9d342;
+}
+
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-small {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* CONTEÚDO SOBRE NÓS */
+.sobre-container {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.sobre-container p {
+  margin-bottom: 1.5rem;
+}
+
+/* Daqui pra baixo é pra escolas/agrupamentos */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-escola {
+  background: #1a1a1a;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card-escola:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(0,0,0,0.4);
+}
+
+.card-escola img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text h3 {
+  margin-top: 0;
+}
+
+.card-text p {
+  margin: .8rem 0 1.2rem;
+}
+
+.btn-vermais {
+  display: inline-block;
+  align-self: center;
+  background: #3d3d3c;
+  padding: .6rem 1rem;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background .2s;
+}
+
+.btn-vermais:hover {
+  background: #c71b2b;
+}
+
+.hero-carlos {
+  background-position: center 30%;
+}
+
+.hero-mariah {
+  background-position: center 25%;
+}
+
+.hero-plutonio {
+  background-size: 64%;
+}
+
+#mariahCarey {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 20%;
+}
