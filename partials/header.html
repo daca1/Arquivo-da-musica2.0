@@ -1,0 +1,24 @@
+<!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <a href="/index.html"><img src="/img/music_icon.png" alt="Icone da homepage"> Arquivo da Música </a>
+    </div>
+    <nav class="nav">
+      <a href="/sobre_nos.html">Sobre Nós</a>
+      <a href="/contact_us.html">Contactos</a>
+      <a href="/agenda.html">Agenda</a>
+      <a href="/agrupamentos.html">Agrupamentos</a>
+      <!-- Agrupamento pode ser escola de música -->
+    </nav>
+  </header>
+
+<script>
+  // (Opcional) marcar link ativo com base na página atual
+  document.addEventListener('DOMContentLoaded', () => {
+    const current = location.pathname.replace(/\/+$/, ''); // remove barra final
+    document.querySelectorAll('.nav a').forEach(a => {
+      const href = new URL(a.href).pathname.replace(/\/+$/, '');
+      if (href === current) a.classList.add('active');
+    });
+  });
+</script>
