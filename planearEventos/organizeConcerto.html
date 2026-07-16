@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Organize o Seu Concerto — Arquivo da Música</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../js/layout.js" defer></script>
+  <style>
+    .hero-single {
+      height: 40vh;
+      background-image: url('../img/concertos.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+    }
+    .hero-single .hero-text {
+      background: rgba(0,0,0,0.55);
+      width: 100%;
+      padding: 1.5rem;
+    }
+
+    .venues {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 5%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .venue-container {
+      display: flex;
+      gap: 0;
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    }
+
+    .venue-img { width: 40%; }
+    .venue-img img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .venue-info {
+      width: 60%;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .venue-info h3 { color: #f9d342; margin: 0 0 0.5rem 0; }
+    .venue-info p { color: #ccc; margin-bottom: 1rem; line-height: 1.5; }
+    .venue-meta { color: #bbb; font-size: 0.95rem; margin-bottom: 1rem; }
+
+    .venue-actions { margin-top: auto; display:flex; gap:0.75rem; align-items:center; }
+    .venue-actions a.button, .venue-actions button {
+      display: inline-block;
+      background: #f9d342;
+      color: #111;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .venue-features { color:#bbb; font-size:0.95rem; margin-bottom:0.5rem; }
+
+    @media (max-width: 768px) {
+      .venue-container { flex-direction: column; }
+      .venue-img img { height: 220px; }
+      .venue-img, .venue-info { width: 100%; }
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- HEADER -->
+  <header data-include></header>
+
+  <section class="hero-single">
+    <div class="hero-text">
+      <h2>Organize o Seu Concerto</h2>
+      <p>Dois espaços disponíveis com capacidade semelhante — escolha o que melhor serve o seu projeto.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="venues" aria-label="Salas para Concertos">
+      <div class="venue-container" id="sala-grande">
+        <div class="venue-img">
+          <img src="../img/sala1.jpg" alt="Sala Principal — Plateia">
+        </div>
+        <div class="venue-info">
+          <h3>Sala Principal — Auditório</h3>
+          <p>Auditório com excelente acústica, palco elevado e platéia confortável. Ideal para concertos formais e apresentações com equipamento técnico completo.</p>
+          <div class="venue-meta">Capacidade aproximada: 200 pessoas • Localização: Piso 0</div>
+          <div class="venue-features">Som PA, iluminação cênica, camarins, possibilidade de  produção técnica.</div>
+          <div class="venue-actions">
+            <a class="button" href="#">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-container" id="sala-intima">
+        <div class="venue-img">
+          <img src="../img/sala2.jpg" alt="Sala Intima — Espaço Modal">
+        </div>
+        <div class="venue-info">
+          <h3>Sala Íntima — Espaço Modular</h3>
+          <p>Espaço versátil com configuração mais próxima do público, ideal para concertos de câmara, sessões acústicas e projetos experimentais.</p>
+          <div class="venue-meta">Capacidade aproximada: 180 pessoas • Localização: Piso 1</div>
+          <div class="venue-features">Sistema de som compacto, iluminação flexível, fácil reconfiguração do espaço.</div>
+          <div class="venue-actions">
+            <a class="button" href="#">Reservar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer data-include></footer>
+
+</body>
+</html>

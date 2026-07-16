@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eventos Corporativos — Arquivo da Música</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../js/layout.js" defer></script>
+  <style>
+    .hero-single {
+      height: 40vh;
+      background-image: url('../img/corporacao.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+    }
+    .hero-single .hero-text {
+      background: rgba(0,0,0,0.55);
+      width: 100%;
+      padding: 1.5rem;
+    }
+
+    .rooms {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 5%;
+    }
+
+    .room-container {
+      display: flex;
+      gap: 0;
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    }
+
+    .room-img { width: 40%; }
+    .room-img img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .room-info {
+      width: 60%;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .room-info h3 { color: #f9d342; margin: 0 0 0.5rem 0; }
+    .room-info p { color: #ccc; margin-bottom: 1rem; line-height: 1.5; }
+    .room-meta { color: #bbb; font-size: 0.95rem; margin-bottom: 1rem; }
+
+    .room-actions { margin-top: auto; }
+    .room-actions a.button {
+      display: inline-block;
+      background: #f9d342;
+      color: #111;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .room-container { flex-direction: column; }
+      .room-img img { height: 220px; }
+      .room-img, .room-info { width: 100%; }
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- HEADER -->
+  <header data-include></header>
+
+  <section class="hero-single">
+    <div class="hero-text">
+      <h2>Eventos Corporativos — Auditório Executivo</h2>
+      <p>Espaço versátil para conferências, apresentações e jantares corporativos. Fotografia ilustrativa.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="rooms" aria-label="Sala Corporativa">
+      <div class="room-container">
+        <div class="room-img">
+          <img src="../img/auditorio.jpg" alt="Auditório Executivo">
+        </div>
+        <div class="room-info">
+          <h3>Auditório Executivo</h3>
+          <p>Auditório moderno com capacidade para apresentações, conferências e reuniões de grande porte. Equipado com sistema de som, projeção e iluminação adaptável às necessidades do evento.</p>
+          <div class="room-meta">Capacidade: 120 pessoas • Localização: Piso 0</div>
+          <div class="room-actions">
+            <a class="button" href="#">Reservar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer data-include></footer>
+</body>
+</html>
